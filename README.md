@@ -1,17 +1,44 @@
+# Community Detection and Influence Maximazation 
+
+## Description
+
 This repository focuses on processing real-world graphs, specifically the web-Google dataset from Stanford. It includes implementations of various algorithms for community detection and influence maximization.
 
-**Dataset**: 
-The dataset used in this project is the web-Google graph from Stanford, providing a real-world scenario for testing and experimentation.
+## Dataset 
 
-**Algorithms**:
-  1. Community Detection
-     
-      a. Heuristic - Louvain Algorithm: The Louvain algorithm is implemented for heuristic-based community detection, offering an efficient approach to uncovering community structures in the graph.
+We use different datasets (which can be found in the data folder)
 
-       b. ML-based - Spectral Clustering: Spectral clustering is utilized for community detection using machine learning techniques, providing an alternative perspective to uncovering graph communities.
+The datasets are taken from SNAP. 
 
-  3. Influence Maximization
+## Algorithms
 
-     a. Heuristic - Independent Cascading: The Independent Cascading model is implemented for heuristic-based influence maximization, exploring the propagation of influence in the graph.
 
-     b. ML-based - To be done
+### Community Detection
+
+1. **Heuristic - Louvain Algorithm:** The Louvain algorithm is implemented for heuristic-based community detection, offering an efficient approach to uncovering community structures in the graph.
+
+2. **ML-based - Spectral Clustering:** Spectral clustering is utilized for community detection using machine learning techniques, providing an alternative perspective to uncovering graph communities.
+
+
+### Influence Maximization
+
+1. **Heuristic - Independent Cascades Model**
+2. **ML-based - Seed selection using PageRank**
+
+
+## Usage
+
+### Independent Cascades Model
+
+To run indepedent cascade model for inlfuence maximzation, you can run the below command. 
+
+| Argument | Description |
+| --- | --- |
+| `-h, --help` | Show this help message and exit |
+| `--k ` | Number of Seed Nodes |
+| `--prob ` | Probability |
+| `--n_iters` | Number of Iterations |
+| `--dataset` | Dataset |
+
+```bash
+python kempe-indepedent-cascades-model/Sample-Kempe-IM.py --dataset data/web-Google-reduced.txt
