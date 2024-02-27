@@ -3,6 +3,7 @@
 ## import
 
 import pandas as pd
+import argparse
 
 def load(path):
     # Load the dataset
@@ -39,12 +40,23 @@ def reduce(data,frac,random_state=42):
     return reduced_data
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Reduce the size of a graph dataset.')
+    parser.add_argument('--dataset', type=str, default='data/web-Google.txt', help='Dataset to reduce')
+    parser.add_argument('--reduction', type=float, default=0.5, help='Percentage to reduce the dataset by')
+    parser.add_argument('--output', type=str, default='data/web-Google-reduced.txt', help='Output file for reduced dataset')
+
+    args = parser.parse_args()
+
+    dataset = args.dataset
+    reduction = args.reduction
+    output = args.output
+
     # Load the dataset
-    data = load('data/web-Google.txt')
+    data = load(dataset)
     # Reduce the dataset to 50% of its size
-    reduced_data = reduce(data,0.5)
+    reduced_data = reduce(data,reduction)
     # Save the reduced dataset to a new file
-    reduced_data.to_csv('data/web-Google-reduced.txt', sep='\t', index=False, header=False)
-    print('Reduced dataset saved to data/web-Google-reduced.txt')
+    reduced_data.to_csv(args.output, sep='\t', index=False, header=False)
+    print('Reduced dataset saved to {}'.format(output)
 
 
