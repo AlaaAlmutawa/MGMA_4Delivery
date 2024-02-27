@@ -1,0 +1,7 @@
+Seed Set: ['142', '250']
+Maximum Influences: [796.8, 798.6]
+configuration:
+Number of Seed Nodes: 2
+Probability: 0.2
+Number of Iterations: 10
+dataset: data/email-Eu-core.txt

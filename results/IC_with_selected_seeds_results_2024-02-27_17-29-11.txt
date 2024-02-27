@@ -1,0 +1,8 @@
+Seed Set: ['537039', '885605']
+Maximum Influences: [154.9, 119.4]
+configuration:
+Number of Seed Nodes: 2
+Probability: 0.2
+Number of Iterations: 10
+seed selection by: pagerank
+dataset: data/web-Google-reduced.txt

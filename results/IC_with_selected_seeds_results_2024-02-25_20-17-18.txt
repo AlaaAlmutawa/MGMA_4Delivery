@@ -1,0 +1,8 @@
+Seed Set: ['506742', '203748']
+Maximum Influences: [62281.7, 63123.2]
+configuration:
+Number of Seed Nodes: 2
+Probability: 0.2
+Number of Iterations: 10
+seed selection by: out_degree_centrality
+dataset: data/web-Google.txt

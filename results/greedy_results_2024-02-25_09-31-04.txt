@@ -1,0 +1,3 @@
+Seed Set: ['284', '903']
+Maximum Influences: [822.0, 825.0]
+dataset: data/email-Eu-core.txt
