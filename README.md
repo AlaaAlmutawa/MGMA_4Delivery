@@ -28,6 +28,13 @@ The datasets are taken from SNAP.
 
 ## Usage
 
+### Utilities 
+
+Dataset reduction 
+
+```bash
+python utils/reduce_graph.py --dataset data/web-Google.txt --reduction 0.5 --output data/web-Google-reduced.txt
+```
 ### Independent Cascades Model
 
 To run indepedent cascade model for inlfuence maximzation, you can run the below command. 
@@ -42,3 +49,4 @@ To run indepedent cascade model for inlfuence maximzation, you can run the below
 
 ```bash
 python kempe-indepedent-cascades-model/Sample-Kempe-IM.py --dataset data/web-Google-reduced.txt
+```
