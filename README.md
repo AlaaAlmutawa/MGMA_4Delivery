@@ -4,11 +4,18 @@
 
 This repository focuses on processing real-world graphs, specifically the web-Google dataset from Stanford. It includes implementations of various algorithms for community detection and influence maximization.
 
-## Dataset 
+## Datasets
 
 We use different datasets (which can be found in the data folder)
 
-The datasets are taken from SNAP. 
+The datasets are taken from SNAP.
+
+| Dataset | Description | Number of Nodes | Number of Edges |
+| --- | --- | --- | --- |
+| `web-Google.txt` | Web graph from Google | 875,713 | 5,105,039 |
+| `email-Eu-core.txt` | Email data from a large European research institution. Outgoing and incoming emails between the departments. | 1,005 | 25,571 |
+
+You can replace the dataset names and descriptions with the actual details of your datasets. 
 
 ## Algorithms
 
