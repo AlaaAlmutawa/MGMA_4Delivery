@@ -57,6 +57,6 @@ if __name__ == "__main__":
     reduced_data = reduce(data,reduction)
     # Save the reduced dataset to a new file
     reduced_data.to_csv(args.output, sep='\t', index=False, header=False)
-    print('Reduced dataset saved to {}'.format(output)
+    print('Reduced dataset saved to {}'.format(output))
 
 
