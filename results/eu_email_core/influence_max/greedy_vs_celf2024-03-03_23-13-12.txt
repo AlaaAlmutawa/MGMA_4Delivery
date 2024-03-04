@@ -1,0 +1,9 @@
+Seed Set (greedy): [2, 5, 979, 7, 435, 524, 634, 995, 414, 475]
+Maximum Influences (greedy): [762.8, 764.5, 765.7, 766.8, 767.9, 769.0, 770.1, 771.2, 772.2, 773.2]
+Seed Set (celf): [2, 5, 979, 7, 635, 435, 524, 995, 634, 846]
+Maximum Influences (celf): [762.8, 764.5, 765.7, 766.8, 767.9, 769.0, 770.1, 771.2, 772.2, 773.2]
+configuration:
+Number of Seed Nodes: 10
+Probability: 0.2
+Number of Iterations: 10
+dataset: ../data/email-Eu-core.txt

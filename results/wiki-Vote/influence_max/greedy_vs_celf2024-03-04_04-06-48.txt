@@ -1,0 +1,9 @@
+Seed Set (greedy): [408, 1093, 2013, 29, 1853, 5201, 892, 915, 3714, 958]
+Maximum Influences (greedy): [1994.0, 2001.4, 2008.5, 2014.3, 2019.0, 2023.6, 2028.1, 2032.2, 2036.3, 2040.0]
+Seed Set (celf): [408, 1093, 2013, 29, 1853, 5201, 892, 915, 3714, 958]
+Maximum Influences (celf): [1994.0, 2001.4, 2008.5, 2014.3, 2019.0, 2023.6, 2028.1, 2032.2, 2036.3, 2040.0]
+configuration:
+Number of Seed Nodes: 10
+Probability: 0.2
+Number of Iterations: 10
+dataset: ../data/wiki-Vote.txt
