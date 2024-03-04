@@ -14,6 +14,7 @@ The datasets are taken from SNAP.
 | --- | --- | --- | --- |
 | `web-Google.txt` | Web graph from Google | 875,713 | 5,105,039 |
 | `email-Eu-core.txt` | Email data from a large European research institution. Outgoing and incoming emails between the departments. | 1,005 | 25,571 |
+| `wiki-Vote.txt` | Wikipedia voting data on adminship. | 7,115 | 103,689|
 
 You can replace the dataset names and descriptions with the actual details of your datasets. 
 
@@ -42,6 +43,15 @@ Dataset reduction
 ```bash
 python utils/reduce_graph.py --dataset data/web-Google.txt --reduction 0.5 --output data/web-Google-reduced.txt
 ```
+
+## Community Detection
+
+### Run Louvain and Spectral Clustering 
+```bash
+python community_detection.py --dataset <path to dataset>
+```
+
+## Influence Maximization
 ### Independent Cascades Model
 
 To run indepedent cascade model for inlfuence maximzation, you can run the below command. 
@@ -55,5 +65,12 @@ To run indepedent cascade model for inlfuence maximzation, you can run the below
 | `--dataset` | Dataset |
 
 ```bash
-python kempe-indepedent-cascades-model/Sample-Kempe-IM.py --dataset data/web-Google-reduced.txt
+python kempe-indepedent-cascades-model/Sample-Kempe-IM.py --dataset <path>
+```
+
+```bash
+python kempe-indepedent-cascades-model/greedy_vs_celf.py --dataset <path>
+```
+```bash
+python kempe-indepedent-cascades-model/seed_selection_vs_greedy.py --dataset <path>
 ```
