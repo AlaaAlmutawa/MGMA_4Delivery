@@ -74,3 +74,13 @@ python kempe-indepedent-cascades-model/greedy_vs_celf.py --dataset <path>
 ```bash
 python kempe-indepedent-cascades-model/seed_selection_vs_greedy.py --dataset <path>
 ```
+
+#### References
+
+Thanks to the below resources we were able to further explore and run the described algorithms:
+- Networkx library 
+- SNAP Stanford 
+- Reporistories: 
+https://github.com/AdnanRasad/Influence-Maximization-Analysis/blob/master/Kempe-Independent-Cascades-Model/Sample-Kempe-IM Adnan Rasad
+and 
+https://hautahi.com/im_greedycelf
