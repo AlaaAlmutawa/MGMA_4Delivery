@@ -5,7 +5,7 @@
 This repository focuses on processing real-world graphs, specifically the web-Google dataset from Stanford. It includes implementations of various algorithms for community detection and influence maximization.
 
 ### Analysis 
-Please find our compiled output and the corresponding analysis in the pdf report (for ease of demonstration).
+Please find our compiled output and the corresponding analysis in the pdf report inside the analysis directory of this repository (for ease of demonstration).
 
 ## Datasets
 
